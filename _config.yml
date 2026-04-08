@@ -1,103 +1,154 @@
-# Welcome to Junteng Liu's Academic Page
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# server process.
 
-# Site Information
-title:            "Junteng Liu"
-description:      "First-year PhD candidate at HKUST NLP Group. Researching NLP, LLM Reasoning, Reinforcement Learning, VLM Hallucination, and LLM Truthfulness."
-url:              "https://Vicent0205.github.io"
-baseurl:          ""
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Junteng Liu"
+title_separator          : "-"
+name                     : &name "Junteng Liu"
+description              : &description "First-year PhD candidate at HKUST NLP Group. Research interests: LLM Reasoning & RL, VLM Hallucination, LLM Truthfulness & Interpretability."
+url                      : https://Vicent0205.github.io
+baseurl                  : ""
+repository               : "Vicent0205/Vicent0205.github.io"
 
-# Repository information
-repository:       "danielbob0201-png/Vicent0205.github.io"
-
-# Author information
+# Site Author - The following control what appear as part of the author content on the side bar.
 author:
-  name:           "Junteng Liu"
-  email:          "jliugi@connect.ust.hk"
-  bio:            "First-year PhD candidate at HKUST NLP Group, focusing on NLP, machine learning, LLM reasoning, and interpretability."
-  location:       "Hong Kong"
-  employer:       "Hong Kong University of Science and Technology"
-  uri:            "https://Vicent0205.github.io"
-  github:         "Vicent0205"
-  twitter:        "junteng88716710"
-  googlescholar:  "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
+  # Biographic information
+  avatar           : "profile.png"
+  name             : "Junteng Liu"
+  pronouns         :
+  bio              : "First-year PhD candidate at HKUST NLP Group. Interested in LLM Reasoning & RL, VLM Hallucination, and LLM Truthfulness & Interpretability."
+  location         : "Hong Kong"
+  employer         : "HKUST NLP Group"
+  uri              : "https://Vicent0205.github.io"
+  email            : "jliugi@connect.ust.hk"
 
-# Build settings
-locale:           "en-US"
-markdown:         kramdown
-highlighter:      rouge
-permalink:        pretty
+  # Academic websites
+  academia         :
+  arxiv            :
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
+  inspire-hep      :
+  impactstory      :
+  orcid            :
+  semantic         :
+  ssrn             :
+  pubmed           :
+  researchgate     :
+  scopus           :
+  zotero           :
 
-# Sass/SCSS
-sass:
-  sass_dir:       _sass
-  style:          compressed
+  # Repositories and software development
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  github           : "Vicent0205"
+  kaggle           :
+  stackoverflow    :
 
-# Exclude from processing
-exclude:
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "vendor"
+  # Social media
+  artstation       :
+  bluesky          :
+  facebook         :
+  flickr           :
+  foursquare       :
+  goodreads        :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  mastodon         :
+  medium           :
+  pinterest        :
+  soundcloud       :
+  steam            :
+  telegram         :
+  tumblr           :
+  twitter          : "junteng88716710"
+  vine             :
+  weibo            :
+  wikipedia        :
+  xing             :
+  youtube          :
+  zhihu            :
 
-# Theme
-theme: minima
-
-# Collections
-collections:
-  publications:
-    output: true
-    permalink: /publication/:path/
-  talks:
-    output: true
-    permalink: /talk/:path/
-  teaching:
-    output: true
-    permalink: /teaching/:path/
-
-# Publication categories
+# Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: Books
+    title: 'Books'
   manuscripts:
-    title: Journal Articles
+    title: 'Journal Articles'    
   conferences:
-    title: Conference Papers
+    title: 'Conference Papers'
 
-# Site settings
-teaser:           ""
-breadcrumbs:      false
-words_per_minute: 160
-future:           true
-read_more:        "disabled"
-talkmap_link:     false
-
-# Comments
+# Site Settings
+teaser                   :
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
 comments:
-  provider:       ""
+  provider               :
   disqus:
-    shortname:    ""
+    shortname            :
   discourse:
-    server:       ""
+    server               :
   facebook:
-    appid:        ""
-    num_posts:    ""
-    colorscheme:  ""
-
-# Others
+    appid                :
+    num_posts            :
+    colorscheme          :
 staticman:
-  allowedFields:  []
-  branch:         "gh-pages"
-  commitMessage:  "New comment."
-  filename:       "comment-{@timestamp}"
-  format:         "yml"
-  moderation:     true
-  path:           "_data/comments/{options.slug}"
-  requiredFields: []
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601"
+atom_feed:
+  hide                   : false
+  path                   :
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : "junteng88716710"
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :
+og_description           :
+social:
+  type                   :
+  name                   :
+  links:
 
 # Analytics
 analytics:
-  provider:       "false"
+  provider               : "false"
   google:
-    tracking_id:  ""
+    tracking_id          :
 
 # Reading Files
 include:
@@ -126,7 +177,7 @@ exclude:
   - local
   - log
   - node_modules
-  - "package.json*"
+  - package.json*
   - Rakefile
   - README
   - tmp
@@ -137,94 +188,103 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Markdown
-markdown:  kramdown
+# Conversion
+markdown: kramdown
 highlighter: rouge
-lsi:       false
+lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Kramdown settings
+# Markdown Processing
 kramdown:
-  input:         GFM
-  hard_wrap:     false
-  auto_ids:      true
-  footnote_nr:   1
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
   entity_output: as_char
-  toc_levels:    1..6
-  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Collections
+# These settings control the types of collections used by the template
 collections:
   teaching:
-    output:  true
+    output: true
     permalink: /:collection/:path/
   publications:
-    output:  true
+    output: true
     permalink: /:collection/:path/
   portfolio:
-    output:  true
+    output: true
     permalink: /:collection/:path/
   talks:
-    output:  true
+    output: true
     permalink: /:collection/:path/
 
-# Defaults
+# These settings control how pages and collections are included in the site
 defaults:
+  # _posts
   - scope:
-      path:   ""
-      type:   posts
+      path: ""
+      type: posts
     values:
-      layout:        single
+      layout: single
       author_profile: true
-      read_time:     true
-      comments:      true
-      share:         true
-      related:       true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
   - scope:
-      path:   ""
-      type:   pages
+      path: ""
+      type: pages
     values:
-      layout:        single
+      layout: single
       author_profile: true
+  # _teaching
   - scope:
-      path:   ""
-      type:   teaching
+      path: ""
+      type: teaching
     values:
-      layout:        single
+      layout: single
       author_profile: true
-      share:         true
-      comments:      true
+      share: true
+      comments: true
+  # _publications
   - scope:
-      path:   ""
-      type:   publications
+      path: ""
+      type: publications
     values:
-      layout:        single
+      layout: single
       author_profile: true
-      share:         true
-      comments:      true
+      share: true
+      comments: true
+  # _portfolio
   - scope:
-      path:   ""
-      type:   portfolio
+      path: ""
+      type: portfolio
     values:
-      layout:        single
+      layout: single
       author_profile: true
-      share:         true
-      comment:        true
+      share: true
+      comment: true
+  # _talks
   - scope:
-      path:   ""
-      type:   talks
+      path: ""
+      type: talks
     values:
-      layout:        talk
+      layout: talk
       author_profile: true
-      share:         true
+      share: true
 
-# Output
-permalink:         /:categories/:title/
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# Timezone
-timezone:          "Etc/UTC"
+# Outputting
+permalink: /:categories/:title/
+timezone: Etc/UTC
 
 # Plugins
 plugins:
@@ -235,6 +295,7 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
+# Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
   - jekyll-gist
@@ -243,7 +304,7 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-# Category/tag archives
+# Archives
 category_archive:
   type: liquid
   path: /categories/
@@ -251,30 +312,8 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# Compression
+# HTML Compression
 compress_html:
   clippings: all
   ignore:
     envs: development
-
-# SEO
-google_site_verification: ""
-bing_site_verification:   ""
-alexa_site_verification:  ""
-yandex_site_verification: ""
-
-# Social
-twitter:
-  username: "junteng88716710"
-facebook:
-  username: ""
-  app_id:   ""
-  publisher: ""
-social:
-  type:   Person
-  links:  []
-
-# Atom feed
-atom_feed:
-  hide:  false
-  path:  ""
